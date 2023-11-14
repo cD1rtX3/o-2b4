@@ -36,9 +36,21 @@ class Canvas {
  	 * Rectangle function. Takes a list of arrays in the form [style, x, y, width, height] and returns void. Assumes the correct typing of arguments.
 	 */
 	r(...argv) {
-		for (avi of argv) {
+		for (let avi of argv) {
 			this.#ctx.fillStyle = avi[0];
 			this.#ctx.fillRect(avi[1], avi[2], avi[3], avi[4]);
+		}
+	}
+	/**
+	 * Circle function. Takes a list of arrays in the form [style, x, y, radius] and returns void. Assumes the correct typing of arguments.
+	 */
+	c(...argv) {
+		for (let avi of argv) {
+			this.#ctx.fillStyle = avi[0];
+			this.#ctx.beginPath();
+			this.#ctx.arc(avi[1], avi[2], avi[3], 0, 6.283185307179586);
+			this.#ctx.closePath();
+			this.#ctx.fill();
 		}
 	}
 }
