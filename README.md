@@ -1,2 +1,1 @@
-# o-2b4
-rhythm game
+This project is unfinished (obviously).
