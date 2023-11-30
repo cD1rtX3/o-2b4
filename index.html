@@ -1,0 +1,43 @@
+<!--
+	O-2b4: rhythm game
+	Copyright (C) 2023  Coarse Rosinflower
+
+	This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Unmodified 2b4</title>
+	</head>
+	<body>
+		<noscript><h1>This content requires JavaScript to be enabled.</h1></noscript>
+		<center><canvas id="2b4-main" width="1280" height="720"></canvas></center>
+		<script>
+			function resize() {
+				if (window.innerWidth * 0.5625 > window.innerHeight) {
+					// The window is in portrait orientation.
+					document.getElementById("2b4-main").style = `width: ${Math.trunc(window.innerHeight * 1.7777777777777777)}px; height: ${Math.trunc(window.innerHeight)}`;
+				}
+				else {
+					// The window is in landscape orientation, or is taller than 16:9.
+					document.getElementById("2b4-main").style = `width: ${Math.trunc(window.innerWidth)px; height: ${Math.trunc(window.innerWidth * 0.5625)}px;`;
+				}
+			}
+			resize();
+		</script>
+		<script src="./draw.js"></script>
+		<script src="./base.js"></script>
+	</body>
+</html>
