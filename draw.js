@@ -53,4 +53,19 @@ class Canvas {
 			this.#ctx.fill();
 		}
 	}
+	/**
+	 * Polygon function. Takes a list of arrays in the form [style, [x1, y1], [x2, y2]...] and returns void. Assumes the correct typing of arguments.
+	 */
+	p(...argv) {
+		for (let avi of argv) {
+			this.#ctx.fillStyle = avi[0];
+			this.#ctx.beginPath();
+			this.#ctx.moveTo(avi[1][0], avi[1][1]);
+			for (let j = 2; j < avi.length; j++) {
+				this.#ctx.lineTo(avi[j][0], avi[j][1]);
+			}
+			this.#ctx.closePath();
+			this.#ctx.fill();
+		}
+	}
 }
