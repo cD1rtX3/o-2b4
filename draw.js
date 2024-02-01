@@ -31,6 +31,7 @@ class Canvas {
  	 */
 	constructor(name) {
 		this.#ctx = document.getElementById(name).getContext("2d");
+		this.#ctx.textBaseline = "top";
 	}
 	/**
  	 * Rectangle function. Takes a list of arrays in the form [style, x, y, width, height] and returns void. Assumes the correct typing of arguments.
@@ -66,6 +67,16 @@ class Canvas {
 			}
 			this.#ctx.closePath();
 			this.#ctx.fill();
+		}
+	}
+	/**
+	 * Text function. Takes the font then a list of arrays in the form [style, text, x, y] and returns void. Assumes the correct typing of arguments.
+	 */
+	t(font, ...argv) {
+		this.#ctx.font = font;
+		for (let avi of argv) {
+			this.#ctx.fillStyle = avi[0];
+			this.#ctx.fillText(avi[1], avi[2], avi[3]);
 		}
 	}
 }
