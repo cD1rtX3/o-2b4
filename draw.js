@@ -34,7 +34,7 @@ class Canvas {
 		this.ctx = document.getElementById(name).getContext("2d");
 		// Default settings.
 		this.ctx.textBaseline = "top";
-		this.ctx.fontKerning = "normal";
+		this.ctx.fontKerning = "default";
 	}
 	/**
  	 * Rectangle function. Takes a list of arrays in the form [style, x, y, width, height] and returns void. Assumes the correct typing of arguments.
