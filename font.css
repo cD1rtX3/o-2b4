@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Roman';
+	src: url('./font/NimbusRomNo9L-RegIta.otf') format('opentype');
+}
+@font-face {
+	font-family: 'Roman';
+	src: url('./font/NimbusRomNo9L-Med.otf') format('opentype');
+	font-weight: bold;
+}
