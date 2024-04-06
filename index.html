@@ -33,11 +33,11 @@
 		<script>
 			function resize() {
 				if (window.innerWidth * 0.5625 > window.innerHeight) {
-					// The window is in portrait orientation.
+					// The window is in landscape orientation.
 					document.getElementById("2b4-main").style = `width: ${Math.trunc(window.innerHeight * 1.7777777777777777)}px; height: ${Math.trunc(window.innerHeight)}`;
 				}
 				else {
-					// The window is in landscape orientation or is taller than 16:9.
+					// The window is in portrait orientation or is taller than 16:9.
 					document.getElementById("2b4-main").style = `width: ${Math.trunc(window.innerWidth)px; height: ${Math.trunc(window.innerWidth * 0.5625)}px;`;
 				}
 			}
