@@ -31,11 +31,11 @@
 @font-face {
 	font-family: 'Nimbus Sans L';
 	font-weight: bold;
-	src: url('./font/NimbusSanL-Med.otf') format('opentype');
+	src: url('./font/NimbusSanL-Bol.otf') format('opentype');
 }
 @font-face {
 	font-family: 'Nimbus Sans L';
 	font-style: italic;
 	font-weight: bold;
-	src: url('./font/NimbusSanL-MedIta.otf') format('opentype');
+	src: url('./font/NimbusSanL-BolIta.otf') format('opentype');
 }
