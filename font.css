@@ -1,9 +1,41 @@
 @font-face {
-	font-family: 'Roman';
+	font-family: 'Nimbus Roman No. 9 L';
+	src: url('./font/NimbusRomNo9L-Reg.otf') format('opentype');
+}
+@font-face {
+	font-family: 'Nimbus Roman No. 9 L';
+	font-style: italic;
 	src: url('./font/NimbusRomNo9L-RegIta.otf') format('opentype');
 }
 @font-face {
-	font-family: 'Roman';
-	src: url('./font/NimbusRomNo9L-Med.otf') format('opentype');
+	font-family: 'Nimbus Roman No. 9 L';
 	font-weight: bold;
+	src: url('./font/NimbusRomNo9L-Med.otf') format('opentype');
+}
+@font-face {
+	font-family: 'Nimbus Roman No. 9 L';
+	font-style: italic;
+	font-weight: bold;
+	src: url('./font/NimbusRomNo9L-MedIta.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Nimbus Sans L';
+	src: url('./font/NimbusSanL-Reg.otf') format('opentype');
+}
+@font-face {
+	font-family: 'Nimbus Sans L';
+	font-style: italic;
+	src: url('./font/NimbusSanL-RegIta.otf') format('opentype');
+}
+@font-face {
+	font-family: 'Nimbus Sans L';
+	font-weight: bold;
+	src: url('./font/NimbusSanL-Med.otf') format('opentype');
+}
+@font-face {
+	font-family: 'Nimbus Sans L';
+	font-style: italic;
+	font-weight: bold;
+	src: url('./font/NimbusSanL-MedIta.otf') format('opentype');
 }
