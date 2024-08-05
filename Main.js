@@ -16,9 +16,9 @@
 	along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-export default {
-	ctx,
-	init(ctx) {
+export default class {
+	static ctx;
+	static init(ctx) {
 		this.ctx = ctx;
 	}
 }
