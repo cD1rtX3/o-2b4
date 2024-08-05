@@ -17,7 +17,8 @@
 */
 
 export default {
-	init() {
-		//
+	ctx,
+	init(ctx) {
+		this.ctx = ctx;
 	}
 }
