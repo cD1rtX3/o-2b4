@@ -17,8 +17,7 @@
 */
 
 export default class Main {
-	static ctx;
 	static init(ctx) {
-		Main.ctx = ctx;
+		//
 	}
 }
