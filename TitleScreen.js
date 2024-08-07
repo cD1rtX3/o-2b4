@@ -15,7 +15,7 @@ export default class TitleScreen {
 	drawButtons() {
 		// placeholder buttons
 		this.ctx.fillStyle = "#ffd700";
-		this.ctx.fillRect(590, 350, 690, 370);
-		this.ctx.fillRect(590, 380, 690, 400);
+		this.ctx.fillRect(590, 350, 100, 20);
+		this.ctx.fillRect(590, 380, 100, 20);
 	}
 }
