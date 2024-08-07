@@ -16,8 +16,12 @@
 	along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+import TitleScreen from "./TitleScreen.js";
+
 export default class Main {
+	static titleScreen;
 	static init(ctx) {
-		//
+		Main.titleScreen = new TitleScreen(ctx);
+		Main.titleScreen.draw();
 	}
 }
