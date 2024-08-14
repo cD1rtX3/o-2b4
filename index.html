@@ -38,6 +38,7 @@
 			Main.init(gameElement.getContext("2d"));
 			gameElement.addEventListener("keydown", Main.onKeyDown);
 			gameElement.addEventListener("keyup", Main.onKeyUp);
+			gameElement.addEventListener("click", Main.onClick);
 			const refresh = setInterval(Main.refresh, 10);
 		</script>
 	</body>
