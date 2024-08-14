@@ -1,5 +1,5 @@
-import TitleScreen from "TitleScreen.js";
-import ButtonRegistry from "ButtonRegistry.js";
+import TitleScreen from "./TitleScreen.js";
+import ButtonRegistry from "./ButtonRegistry.js";
 
 export default class Main {
 	static init(ctx) {
