@@ -6,5 +6,6 @@ export default class Main {
 	}
 	static onKeyDown(e) {}
 	static onKeyUp(e) {}
+	static onClick(e) {}
 	static refresh() {}
 }
