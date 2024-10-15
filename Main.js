@@ -12,10 +12,10 @@ export default class Main {
 	static onKeyUp(e) {}
 	static onClick(e) {
 		for ([button, result] of ButtonRegistry) {
-			if (e.offsetX >= button.x
-				&& e.offsetX <= button.x + button.w
-				&& e.offsetY >= button.y
-				&& e.offsetY <= button.y + button.h) {
+			if (e.offsetY >= button.y
+				&& e.offsetY <= button.y + button.h
+				&& e.offsetX >= button.x
+				&& e.offsetX <= button.x + button.w) {
 
 				result.call(); break;
 			}
