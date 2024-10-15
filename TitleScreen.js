@@ -1,8 +1,14 @@
+import "./Button.js"
+
 export default class TitleScreen {
-	ctx; buttons;
+	ctx; buttons; state;
 	constructor(ctx) {
 		this.ctx = ctx;
-		this.buttons = new Array();
+		this.buttons = [
+			new Button(ctx, 490, 360, 300, 150, "#e0dde0", "#010101", "button0", 25),
+			new Button(ctx, 490, 535, 300, 150, "#e0dde0", "#010101", "button1", 25)
+		];
+		this.state = "mainmenu";
 	}
 	draw() {
 		this.drawBackground();
