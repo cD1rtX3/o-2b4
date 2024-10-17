@@ -35,11 +35,13 @@
 		<script type="module">
 			import Main from "./Main.js";
 			const gameElement = document.getElementById("2b4-main");
-			Main.init(gameElement.getContext("2d"));
-			gameElement.addEventListener("keydown", Main.onKeyDown);
-			gameElement.addEventListener("keyup", Main.onKeyUp);
-			gameElement.addEventListener("click", Main.onClick);
-			const refresh = setInterval(Main.refresh, 10);
+			gameElement.addEventListener("focus", () => {
+				Main.init(gameElement.getContext("2d"));
+				gameElement.addEventListener("keydown", Main.onKeyDown);
+				gameElement.addEventListener("keyup", Main.onKeyUp);
+				gameElement.addEventListener("click", Main.onClick);
+				const refresh = setInterval(Main.refresh, 10);
+			}, {once: true});
 		</script>
 	</body>
 </html>
